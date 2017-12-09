@@ -1,0 +1,19 @@
+<!--div class="card text-center" *ngFor="let _partidos of partidosList" (click)="onItemClick(_partidos)" >
+  <div class="card-header">
+    Featured
+  </div>
+  <div class="card-block">
+    <h4 class="card-title">Special title treatment</h4>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+  <div class="card-footer text-muted">
+    2 days ago
+  </div>
+</div-->
+<ul class="list-group ">
+  <div class="list-group-item" *ngFor="let _partidos of partidosList" (click)="onItemClick(_partidos)">
+    <h1>{{_partidos.equipoa}} <img [src]="_partidos.urla" width="50px" height="50px"> {{_partidos.marcadora}} -
+       {{_partidos.marcadorb}} <img [src]="_partidos.urlb" width="50px" height="50px"> {{_partidos.equipob}} </h1>
+     </div>
+</ul>

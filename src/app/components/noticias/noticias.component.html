@@ -1,0 +1,95 @@
+<div class="parallax">
+  <div class=" hoc clear">
+    <article>
+      <div>
+        <h2 class="heading" style="padding:29px;"></h2>
+        <h2 style="font-size:75px; text-align: center;">NOTICIAS.</h2>
+      </div>
+    </article>
+    <div class="row">
+        <div class="col-sm-6">
+
+            <div class="card" style="color: #201d1d; background-color: #13BC5B;">
+                <img class="card-img-top" src="assets/images/uefa.png" width="100px" height="100px" align="right" alt="Card image cap">
+                <div class="card-block">
+                  <a href="#" class="btn btn-outline-success btn-lg">IR A NOTICIAS UEFA</a>
+                </div>
+              </div>
+            </div>   
+    
+    <div class="col-sm-6">
+              <div class="card" style="color: #201d1d; background-color: #13BC5B;">
+                <img class="card-img-top" src="assets/images/fifa.png" width="120px" height="100px" align="right" alt="Card image cap">
+                <div class="card-block">
+                  <a href="#" class="btn btn-outline-success btn-lg" style="float: right;">IR A NOTICIAS FIFA</a>
+                </div>
+              </div>        
+        </div>
+      </div>
+  </div>
+</div> 
+
+
+<style>
+  .parallax {
+      /* The image used */
+      background-image: url("assets/images/news.jpg");
+  
+      /* Set a specific height */
+      min-height: 500px;
+  
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+  
+  body{
+    height: 100%;
+    margin: 0;
+  }
+  
+  .heading{
+  margin: 0 0 20px 0;
+  font-size: 23px;
+  line-height: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  }
+
+  .overlay{
+    color: inherit;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABhJREFUeNpiYGBgePz//38GRhABAgABBgBFTAbfCBNE2AAAAABJRU5ErkJggg==");
+  }
+
+  /*.pattern {background:url(assets/images/01.jpg); width: 100%; height: 100%;}*/
+  .pattern:after { content:""; width:100%; height:100%; position:absolute; top:0; left:0; z-index:0;}
+  .pattern > div { position:relative; z-index:1;}
+  .pattern:after{ background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABhJREFUeNpiYGBgePz//38GRhABAgABBgBFTAbfCBNE2AAAAABJRU5ErkJggg==); /*background:url(images/pattern.png);*/}
+
+  .caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+.card{
+  align-content: center;
+}
+
+</style>

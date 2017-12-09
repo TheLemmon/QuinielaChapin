@@ -1,0 +1,47 @@
+.hoc {
+    max-width: 978px;
+}
+.hoc {
+    display: block;
+    margin: 0 auto;
+}
+
+#breadcrumb ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+#breadcrumb {
+    padding: 15px 0;
+}
+
+#mainav, #breadcrumb, .sidebar nav {
+    line-height: normal;
+}
+.hoc {
+    max-width: 978px;
+}
+.hoc {
+    display: block;
+    margin: 0 auto;
+}
+#breadcrumb li a::after {
+    top: 3px;
+    right: 0;
+}
+#mainav .drop::after, #mainav li li .drop::after, #breadcrumb li a::after, .sidebar nav a::after {
+    position: absolute;
+    font-family: "Oswald";
+    font-size: 10px;
+    line-height: 10px;
+}
+
+h1, h2, h3, h4, h5, h6, .heading {
+    margin: 0 0 20px 0;
+    line-height: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: left;
+}

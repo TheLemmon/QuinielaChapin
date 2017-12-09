@@ -1,0 +1,125 @@
+<div class="parallax">
+  <div class=" hoc clear">
+    <article>
+      <div>
+        <h2 class="heading" style="padding:29px; text-align: center;"></h2>
+        <h2 style="font-size:75px; text-align: center;">FAQ.</h2>
+        <p class="heading" align="justify" style="color:#FFD904; font-size:35px;">¿Por qué no puedo ingresar los marcadores a los partidos propuestos?</p>
+        <p class="heading" align="justify" style="font-size:35px;">Pueden ocurrir varias cosas...             
+          
+              <p style="text-align: center;">1) El partido se disputa el día de hoy. </p>
+          
+              <p style="text-align: center;">2) El partido ya fue disputado y confirmado el marcador.</p>
+
+        <p class="heading" align="justify" style="color:#FFD904; font-size:35px;">¿Cuántas veces es posible cambiar el marcador del partido por cada usuario?</p>    
+        <p class="heading" align="justify" style="font-size:35px;">Indefinidas veces, siempre y cuando aún este vigente el ingreso.</p>
+        <p class="heading" align="justify" style="color:#FFD904; font-size:35px;">¿Puedo ver el desempeño de otro usuario?</p>
+        <p class="heading" align="justify" style="font-size:35px;">Actualmente puedes ver los resultados ingresados en la última Jornada de Quinielas.</p>
+        <p class="heading" align="justify" style="color:#FFD904; font-size:35px;">¿Cuál es la diferencia entre una Temporada de Quinielas y una Jornada de Quinielas?</p>
+        <p class="heading" align="justify" style="font-size:35px;">La Temporada de Quinielas esta conformada por cierta cantidad de Jornadas de Quinielas, es decir, la temporada puede durar entre 1, 2.. 6,7 meses.. 1 año, y las jornadas un máximo de una semana.</p>
+        <p class="heading" align="justify" style="color:#FFD904; font-size:35px;">¿Puedo reclamar algún premio por los puntos obtenidos en cada partido?</p>
+        <p class="heading" align="justify" style="font-size:35px;">No, la única forma de ganar algún premio es entrando al sorteo.</p>
+        <p class="heading" align="justify" style="color:#FFD904; font-size:35px;">¿Cómo puedo entrar al sorteo?</p>
+        <p class="heading" align="justify" style="font-size:35px;">Debes adquirir tus tarjetas para activarlas y ser candidato a ganar.</p>
+        <p class="heading" align="justify" style="color:#FFD904; font-size:35px;">¿Cómo se si he ganado algún premio?</p>
+        <p class="heading" align="justify" style="font-size:35px;">En el momento que actives tu tarjeta serás notificado del premio obtenido, en caso de no ser favorecido por un premio de forma instantanea, entras automáticamente al sorteo final según la fecha especificada.</p>
+        <p class="heading" align="justify" style="color:#FFD904; font-size:35px;">¿Si soy favorecido con un premio o con el sorteo final, cómo lo reclamo?</p>
+        <p class="heading" align="justify" style="font-size:35px;">Tus datos estan guardados en la base de datos, por lo que nosotros te contactaremos, pero es muy importante que siempre guardes la tarjeta con la que ganaste para que puedas hacer el reclamo del premio.</p>
+        <p class="heading" align="justify" style="color:#FFD904; font-size:35px;">¿Por qué para ganar hay que entrar a un sorteo y no por los puntos acumulados por los puntos obtenidos en cada partido?</p>      
+        <p class="heading" align="justify" style="font-size:35px;">Intentar adivinar los partidos es solamente diversión y todos pueden participar, pero para optar a premios la única forma es mediante los sorteos.</p>
+      <h2 class="heading" style="padding:29px;"></h2>
+      <h2 class="heading" style="padding:15px;"></h2>
+      </div>
+    </article>
+  </div>
+</div> 
+
+
+<style>
+  .parallax {
+      /* The image used */
+      background-image: url("assets/images/fondo.jpg");
+  
+      /* Set a specific height */
+      min-height: 500px;
+  
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+  
+  body{
+    height: 100%;
+    margin: 0;
+  }
+  
+  .heading{
+  margin: 0 0 20px 0;
+  font-size: 23px;
+  line-height: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  }
+
+  .overlay{
+    color: inherit;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABhJREFUeNpiYGBgePz//38GRhABAgABBgBFTAbfCBNE2AAAAABJRU5ErkJggg==");
+  }
+
+  /*.pattern {background:url(assets/images/01.jpg); width: 100%; height: 100%;}*/
+  .pattern:after { content:""; width:100%; height:100%; position:absolute; top:0; left:0; z-index:0;}
+  .pattern > div { position:relative; z-index:1;}
+  .pattern:after{ background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABhJREFUeNpiYGBgePz//38GRhABAgABBgBFTAbfCBNE2AAAAABJRU5ErkJggg==); /*background:url(images/pattern.png);*/}
+
+  .caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+.container{
+  padding: 80px 0;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 750px;
+}
+
+.clear{
+  clear: both;
+}
+
+.row3 {
+    color: #141414;
+    background-color: #FFFFFF;
+}
+
+.clear, .clear::after, .group, .group::after {
+    clear: both;
+}
+.clear, .group {
+    display: block;
+}
+
+.row2 {
+    color: #141414;
+    background-color: #F3F3F3;
+}
+  </style>

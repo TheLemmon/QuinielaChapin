@@ -1,0 +1,75 @@
+<form #partidosForm="ngForm" (ngSubmit)="onSubmit(partidosForm)">
+  <input type="hidden" name="$key" #$key="ngModel" [(ngModel)]="partidosService.selectedPartidos.$key">
+  <!-- Inicio Quiniela -->
+  <form #quinielaForm="ngForm" (ngSubmit)="onSubmitt(quinielaForm)" >
+      <input type="hidden" name="$key" #$key="ngModel" [(ngModel)]="quinielaService.selectedQuiniela.$key">
+  <div class="form-goup">
+      <input class="form-control"  name="marcador" #marcador="ngModel"  [(ngModel)]="quinielaService.selectedQuiniela.marcador" placeholder="¿Cual es tu marcador?" required>
+ </div> 
+  <div class="form-goup">
+      <input class="form-control"  name="equipo" #equipo="ngModel" [(ngModel)]="quinielaService.selectedQuiniela.equipo"   placeholder="¿Cua equipo ganara ?" required>  
+  </div>
+  <div class="form-goup">
+      <button type="submit" class="btn btn-default" [disabled]="!quinielaForm.valid"  style="font-family: Oswald; background-color: #13BC5B; color: #fff;">
+      <i class="fa fa-floppy-o"></i>Enviar</button>
+      <button type="submit"  (click)="resetFormm(quinielaForm)" class="btn btn-default"  style="font-family: Oswald; background-color: #13BC5B; color: #fff;">
+      <i class="fa fa-repeat"></i>Corregir</button>
+  </div>
+  </form>
+  <!-- Fin ingreso quiniela --> 
+  <div class="form-group">
+     <label for="exampleSelect1" >EquipoA</label>
+      <select class="form-control" [disabled]="true" id="exampleSelect1" [(ngModel)]="partidosService.selectedPartidos.equipoa" name="equipoa" #equipoa="ngModel" >
+      <option value="Guatemala">Guatemala</option>
+      <option value="Alemania">Alemania</option>
+      <option value="Japon">Japon</option>
+    </select>
+  </div>
+  <!--div class="form-group">
+    <label>Bandera Equipo A</label>
+    <select [(ngModel)]="partidosService.selectedPartidos.urla"  [disabled]="true"  name="urla" #urla="ngModel" >
+      <option value="http://www.quinielachapina.com/imagenes/banderas/guatemala.png">Guatemala</option>
+      <option value="http://www.quinielachapina.com/imagenes/banderas/alemania.png">Alemania</option>
+      <option value="http://www.quinielachapina.com/imagenes/banderas/japon.png">Japon</option>
+    </select>
+  </div-->
+  <div class="form-group">
+    <label>MarcadorA</label>
+    <input class="form-control"  [disabled]="true" name="marcadora" #marcadora="ngModel" [(ngModel)]="partidosService.selectedPartidos.marcadora" placeholder="Marcador Equipo A" required>
+</div>
+<div class="form-group">
+  <label>Equipo B</label>
+  <select [(ngModel)]="partidosService.selectedPartidos.equipob" [disabled]="true" name="equipob" #equipob="ngModel" >
+    <option value="Guatemala">Guatemala</option>
+    <option value="Alemania">Alemania</option>
+    <option value="Japon">Japon</option>
+  </select>
+</div>
+<!--div class="form-group">
+  <label>Bandera B</label>
+  <select [(ngModel)]="partidosService.selectedPartidos.urlb" [disabled]="true" name="urlb" #urlb="ngModel" >
+    <option value="http://www.quinielachapina.com/imagenes/banderas/guatemala.png">Guatemala</option>
+    <option value="http://www.quinielachapina.com/imagenes/banderas/alemania.png">Alemania</option>
+    <option value="http://www.quinielachapina.com/imagenes/banderas/japon.png">Japon</option>
+  </select>
+</div-->
+<div class="form-group">
+  <label>MarcadorB</label>
+  <input class="form-control"  [disabled]="true" name="marcadorb" #marcadorb="ngModel" [(ngModel)]="partidosService.selectedPartidos.marcadorb" placeholder="Marcador Equipo B" required>
+</div>
+<div class="form-group">
+  <label>Cantidad Tokens</label>
+  <input class="form-control" [disabled]="true"  name="tokens" #tokens="ngModel" [(ngModel)]="partidosService.selectedPartidos.tokens" placeholder="Cantidad de tokens" required>
+</div>
+
+  <!-- -->
+
+    <!--div class="form-group">
+      <button type="submit" class="btn btn-default" [disabled]="!partidosForm.valid" style="font-family: Oswald; background-color: #13BC5B; color: #fff;">
+       <i class="fa fa-floppy-o"></i>Aceptar</button>
+      <button type="button" class="btn btn-default" *ngIf="partidosService.selectedPartidos.$key!=null" style="font-family: Oswald; background-color: #13BC5B; color: #fff;" (click)="onDelete(partidosForm)">
+          <i class="fa fa-trash"></i>Elimiar</button>
+      <button type="button" class="btn btn-default" style="font-family: Oswald; background-color: #13BC5B; color: #fff;" (click)="resetForm(partidosForm)">
+          <i class="fa fa-repeat"></i> Actualizar</button>
+    </div-->
+</form>

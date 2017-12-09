@@ -1,0 +1,83 @@
+<!--div>
+<div class="container-fluid">
+    <div class="row">
+      <nav class="col-sm-3 col-md-2 hidden-xs-down bg-faded sidebar">
+        <ul class="nav nav-pills flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Overview <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Reports</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Analytics</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Export</a>
+          </li>
+        </ul>
+
+        <ul class="nav nav-pills flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Nav item</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Nav item again</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">One more nav</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Another nav item</a>
+          </li>
+        </ul>
+
+        <ul class="nav nav-pills flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Nav item again</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">One more nav</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Another nav item</a>
+          </li>
+        </ul>
+      </nav>
+</div-->
+<!--nav class="navbar navbar-toggleable-md navbar-light bg-faded" style="background-color: #13BC5B; color: #ffff; padding: 3px 0; margin: auto;">
+  </nav-->
+  <div class="jumbotron bg-transparent text-center">
+    <div *ngIf="!user" class="card text-center">
+      <h6 class="card-header">
+        Este es tu perfil
+      </h6>
+      <div class="card-block">
+        <h4 class="card-title">No esta registrado</h4>
+        <p class="card-text">Acceder con </p>
+      </div>
+      <div class="card-block">
+        <button class="btn btn-social-icon btn-google" (click)="signInWithGoogle()"><span class="fa fa-google"></span>Google</button>
+        <button class="btn btn-social-icon btn-facebook" (click)="signInWithFB()"><span class="fa fa-facebook"></span>Facebook</button>
+      </div>
+    </div>
+    <div *ngIf="user" class="card text-center">
+      <h6 class="card-header">
+        Este es tu perfil.
+      </h6>
+      <div class="card-block"></div>
+      <img class="card-img-top img-responsive photo" src="{{ user.photoUrl }}">
+      <div class="card-block">
+        <h4 class="card-title">{{ user.name }}</h4>
+        <p class="card-text">{{ user.email }}</p>
+      </div>
+      <div class="card-block">
+        <app-quiniela></app-quiniela>
+      </div>
+
+      <div class="card-block">
+        <button class="btn btn-danger" (click)="signOut()">Salir</button>
+      </div>
+    </div>
+  </div>
+  

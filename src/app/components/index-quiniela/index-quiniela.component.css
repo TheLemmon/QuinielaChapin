@@ -1,0 +1,128 @@
+html { height: 100%; }
+
+.overlay{
+  color: inherit;
+  background-color: rgba(0,0,0,.55);
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABhJREFUeNpiYGBgePz//38GRhABAgABBgBFTAbfCBNE2AAAAABJRU5ErkJggg==");
+  background-image: url('~/assets/images/01.jpg');
+}
+
+.row2 {
+  color: #141414;
+  background-color: #F3F3F3;
+}
+
+.services article:hover {
+  color: #FFFFFF;
+  background-color: #13bc5b;
+  border-color: #13bc5b;
+  box-shadow: 5px 5px 0px rgba(0,0,0,.2);
+}
+
+.services article {
+  display: block;
+  padding: 30px;
+  border: 1px solid;
+  border-color: #D7D7D7;
+}
+
+article{
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+::before, ::after {
+  
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+  
+  }
+
+  .services article:hover {
+  
+      color: #FFFFFF;
+      background-color: #13bc5b;
+      border-color: #13bc5b;
+      box-shadow: 5px 5px 0px rgba(0,0,0,.2);
+  
+  }
+  .services article {
+  
+      border-color: #D7D7D7;
+  
+  }
+  .services article {
+  
+      display: block;
+      padding: 30px;
+      border: 1px solid;
+          border-top-color: currentcolor;
+          border-right-color: currentcolor;
+          border-bottom-color: currentcolor;
+          border-left-color: currentcolor;
+  
+  }
+  address, article, aside, figcaption, figure, footer, header, main, nav, section {
+  
+      display: block;
+      margin: 0;
+      padding: 0;
+  
+  }
+  article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  
+      display: block;
+  
+  }
+  *, ::before, ::after {
+  
+      transition: all .3s ease-in-out;
+  
+  }
+  *, ::before, ::after {
+  
+      box-sizing: border-box;
+  
+  }
+  * {
+  
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+  
+  }
+  .one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter {
+  
+      list-style: none;
+  
+  }
+
+  .nospace {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.clear, .clear::after, .group, .group::after {
+    clear: both;
+}
+
+.clear, .group {
+    display: block;
+}
